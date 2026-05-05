@@ -1,0 +1,28 @@
+{
+"type": "FeatureCollection",
+"name": "parking",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{"type":"Feature","properties":{"fid":1,"day":18,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.974238779156583,55.598800689040985],[12.975606067943383,55.599380610616706]]}},
+{"type":"Feature","properties":{"fid":2,"day":5,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.97181993346689,55.598470117212159],[12.973793548634495,55.598662565529914],[12.975566796780011,55.599438009480309]]}},
+{"type":"Feature","properties":{"fid":3,"day":3,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.971821718598218,55.598410992841188],[12.973742074073378,55.598604674997098],[12.974189627994035,55.598776836110765]]}},
+{"type":"Feature","properties":{"fid":4,"day":3,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.974478293453098,55.598665654617207],[12.975859064481572,55.598787929756256]]}},
+{"type":"Feature","properties":{"fid":5,"day":16,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.975815780123309,55.598822166726897],[12.974491278760576,55.598707228207232]]}},
+{"type":"Feature","properties":{"fid":6,"day":3,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.975863392917393,55.598780593258667],[12.976084143144517,55.598291490324456]]}},
+{"type":"Feature","properties":{"fid":7,"day":2,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.976157726553559,55.598298826913499],[12.975928319454782,55.598785484257213]]}},
+{"type":"Feature","properties":{"fid":8,"day":2,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.975889363532351,55.59882950321672],[12.975677270176881,55.599391963351977]]}},
+{"type":"Feature","properties":{"fid":9,"day":3,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.975930790911763,55.598800986994434],[12.978146198125318,55.599022129520968]]}},
+{"type":"Feature","properties":{"fid":10,"day":16,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.978122713243193,55.59905972362651],[12.975911220176663,55.598831947023186]]}},
+{"type":"Feature","properties":{"fid":11,"day":19,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.978200536397591,55.599063663619461],[12.977926857593264,55.599756851664921]]}},
+{"type":"Feature","properties":{"fid":12,"day":18,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.975720488101432,55.599417171136821],[12.978756382849221,55.600702764762438]]}},
+{"type":"Feature","properties":{"fid":13,"day":2,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.975647805538408,55.5994519174644],[12.975234074025819,55.600358469862954]]}},
+{"type":"Feature","properties":{"fid":14,"day":5,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.978699306939477,55.600755100179022],[12.975669137317324,55.599481755869185]]}},
+{"type":"Feature","properties":{"fid":15,"day":17,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.978547374127528,55.598502710111212],[12.978211521889442,55.599032581925329]]}},
+{"type":"Feature","properties":{"fid":16,"day":16,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.97826855340157,55.599021841351508],[12.979535920337746,55.599143567682646]]}},
+{"type":"Feature","properties":{"fid":17,"day":16,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.979491562494982,55.599200850531304],[12.978255879732206,55.599082704564289]]}},
+{"type":"Feature","properties":{"fid":18,"day":5,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.979592951849877,55.599222331577998],[12.979231752273064,55.600013541935951]]}},
+{"type":"Feature","properties":{"fid":19,"day":6,"time_start":12,"time_stop":16},"geometry":{"type":"LineString","coordinates":[[12.979105015579448,55.600009961834523],[12.979478888825621,55.599233072096915]]}},
+{"type":"Feature","properties":{"fid":20,"day":15,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.97907333140604,55.600063663321656],[12.977901016990076,55.599866757509481]]}},
+{"type":"Feature","properties":{"fid":21,"day":19,"time_start":8,"time_stop":12},"geometry":{"type":"LineString","coordinates":[[12.977983395840928,55.599805895513065],[12.97906065773668,55.599995641425551]]}}
+]
+}
