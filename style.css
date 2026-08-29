@@ -1,12 +1,188 @@
 @import "node_modules/ol/ol.css";
 
-html, body {
-  margin: 0;
-  height: 100%;
+html,
+body {
+    margin: 0;
+    height: 100%;
 }
+
 #map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.ol-popup {
+    position: absolute;
+
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+
+    padding: 18px 48px 18px 18px;
+
+    border-radius: 12px;
+    border: 1px solid #ccc;
+
+    bottom: 12px;
+    left: -50px;
+
+    /* Desktop */
+    min-width: 280px;
+    max-width: 400px;
+
+    /* Prevent long content from overflowing */
+    box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    /* Don't let text/content overflow the popup */
+    overflow-wrap: break-word;
+}
+
+
+/* Arrow */
+.ol-popup:after,
+.ol-popup:before {
+    top: 100%;
+
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #ccc;
+    border-width: 11px;
+
+    left: 48px;
+    margin-left: -11px;
+}
+
+
+/* Close button */
+.ol-popup-closer {
+    position: absolute;
+
+    top: 6px;
+    right: 6px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #333;
+    background: transparent;
+
+    border-radius: 50%;
+
+    /* Important for touch */
+    touch-action: manipulation;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+.ol-popup-closer:after {
+    content: "✕";
+}
+
+
+/* Touch feedback */
+.ol-popup-closer:active {
+    background-color: #eee;
+}
+
+
+/* ------------------------- */
+/* PHONE */
+/* ------------------------- */
+
+@media (max-width: 600px) {
+
+    .ol-popup {
+        /*
+     * Don't let the popup extend beyond the screen.
+     * 90vw leaves some space on both sides.
+     */
+        width: 90vw;
+        max-width: 90vw;
+
+        min-width: 0;
+
+        padding: 20px 50px 20px 20px;
+
+        border-radius: 14px;
+
+        font-size: 17px;
+        line-height: 1.5;
+
+        /*
+     * The popup is positioned relative to the clicked
+     * map coordinate, so don't make it too wide.
+     */
+        left: -45vw;
+
+        bottom: 15px;
+    }
+
+
+    /* Bigger close button for fingers */
+    .ol-popup-closer {
+        width: 44px;
+        height: 44px;
+
+        top: 5px;
+        right: 5px;
+
+        font-size: 22px;
+    }
+
+
+    /* Center the arrow */
+    .ol-popup:after {
+        left: 50%;
+        margin-left: -10px;
+    }
+
+    .ol-popup:before {
+        left: 50%;
+        margin-left: -11px;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 380px) {
+
+    .ol-popup {
+        width: 94vw;
+        max-width: 94vw;
+
+        left: -47vw;
+
+        padding: 18px 48px 18px 18px;
+
+        font-size: 16px;
+    }
 }
